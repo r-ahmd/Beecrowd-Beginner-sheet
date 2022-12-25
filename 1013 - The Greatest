@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() 
+{
+ 
+  int a, b, c, e, f;
+  scanf("%d%d%d", &a, &b, &c);
+  
+  e = (a + b + abs(a - b)) / 2;
+  
+  f = (e + c + abs(e - c)) / 2;
+  
+  
+  
+  printf("%d eh o maior\n", f);
+  
+ 
+    return 0;
+}
