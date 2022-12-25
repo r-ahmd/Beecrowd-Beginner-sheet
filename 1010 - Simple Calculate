@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int p1, u1;
+    double pr1;
+    
+    int p2, u2;
+    double pr2;
+    double ttl;
+    
+    scanf("%d%d%lf", &p1, &u1, &pr1);
+    scanf("%d%d%lf", &p2, &u2, &pr2);
+    
+    ttl = ( u1* pr1) + (u2 * pr2);
+    
+    
+    printf("VALOR A PAGAR: R$ %.2lf\n", ttl);
+ 
+
+    return 0;
+}
