@@ -1,0 +1,26 @@
+#include <stdio.h>
+ 
+int main() 
+{
+ 
+  int s, e, a, b, c;
+  scanf("%d%d", &s, &e);
+
+  a = 24 - s + e;
+  b = e - s;
+  c = 24;
+
+  if (s > e)
+  {
+    printf("O JOGO DUROU %d HORA(S)\n", a);
+  }
+  else if (s == e)
+  {
+    printf("O JOGO DUROU %d HORA(S)\n", c);
+  }
+  else if(s < e)
+  {
+    printf("O JOGO DUROU %d HORA(S)\n", b);
+  }
+    return 0;
+}
