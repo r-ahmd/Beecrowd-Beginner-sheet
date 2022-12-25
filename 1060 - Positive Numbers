@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+int main() 
+{
+ 
+  int n=0,i=0;
+  float a;
+  while (i<6)
+  {
+    i++;
+    scanf("%f", &a);
+    if (a>=0)
+      n++;
+  }
+  
+  printf("%d valores positivos\n", n);
+
+ 
+    return 0;
+}
