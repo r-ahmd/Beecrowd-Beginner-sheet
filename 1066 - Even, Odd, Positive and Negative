@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int main() 
+{
+ 
+    int arr[5];
+    int evenCount=0, oddCount=0, posCount=0, negCount=0;
+    
+    for(int i=0; i<5; i++)
+        scanf("%d", &arr[i]);
+    
+    for(int i=0; i<5; i++)
+    {
+        if(arr[i] % 2 == 0)
+            evenCount++;
+        else
+            oddCount++;
+        if(arr[i] > 0 )
+            posCount++;
+        else if(arr[i] < 0 )
+            negCount++;
+    }
+        
+    printf("%d valor(es) par(es)\n", evenCount);
+    printf("%d valor(es) impar(es)\n", oddCount);
+    printf("%d valor(es) positivo(s)\n", posCount);
+    printf("%d valor(es) negativo(s)\n", negCount);
+ 
+    return 0;
+}
