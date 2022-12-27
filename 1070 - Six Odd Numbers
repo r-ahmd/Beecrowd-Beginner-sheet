@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main() 
+{
+   int x, i=0;
+    scanf("%d", &x);
+
+    if(x%2==0)
+        x++;
+    while(i<6)
+    {
+        printf("%d\n", x);
+        i++;
+        x+=2;
+    }
+    
+ 
+    return 0;
+}
