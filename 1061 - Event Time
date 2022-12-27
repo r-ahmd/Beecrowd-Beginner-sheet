@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int d1,h1,m1,s1,total1, d2,h2,m2,s2,total2, result;
+    int W, X, Y, Z;
+    char str1[10], str2[10], chr;
+    
+    scanf("%s %d %d %c %d %c %d", &str1, &d1, &h1, &chr, &m1, &chr, &s1);
+    scanf("%s %d %d %c %d %c %d", &str2, &d2, &h2, &chr, &m2, &chr, &s2);
+    
+    total1 = s1 + m1*60 + h1*3600 + d1*24*3600;
+    total2 = s2 + m2*60 + h2*3600 + d2*24*3600;
+    result = total2 - total1;
+    
+    W = result / (24*3600);
+    X = (result - W*24*3600) / 3600;
+    Y = (result - W*24*3600 - X*3600)/60;
+    Z = (result - W*24*3600 - X*3600 - Y*60);
+    
+    printf("%d dia(s)\n", W);
+    printf("%d hora(s)\n", X);
+    printf("%d minuto(s)\n", Y);
+    printf("%d segundo(s)\n", Z);
+    
+    return 0;
+}
