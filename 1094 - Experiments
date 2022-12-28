@@ -1,0 +1,32 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int n, a, C=0, R=0, S=0, total;
+    char c;
+    scanf("%d", &n);
+    for(int i=1; i<=n; i++)
+    {
+        scanf("%d %c", &a, &c);
+        if(c=='C')
+            C+=a;
+        if(c=='R')
+            R+=a;
+        if(c=='S')
+            S+=a;
+    }
+    total = C+R+S;
+    float C_per = (float)C*100/total;
+    float R_per = (float)R*100/total;
+    float S_per = (float)S*100/total;
+    
+    printf("Total: %d cobaias\n", total);
+    printf("Total de coelhos: %d\n", C);
+    printf("Total de ratos: %d\n", R);
+    printf("Total de sapos: %d\n", S);
+    printf("Percentual de coelhos: %.2f %\n", C_per);
+    printf("Percentual de ratos: %.2f %\n", R_per);
+    printf("Percentual de sapos: %.2f %\n", S_per);
+    
+    return 0;
+}
