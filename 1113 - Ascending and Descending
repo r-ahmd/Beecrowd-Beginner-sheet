@@ -2,7 +2,7 @@
  
 int main() 
 {
-    int a, b, sum=0;
+    int a, b;
     while(1)
     {
         scanf("%d %d", &a, &b);
