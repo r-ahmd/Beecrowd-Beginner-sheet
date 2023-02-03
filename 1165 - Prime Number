@@ -1,0 +1,31 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int n, x;
+    scanf("%d", &n);
+    while(n--)
+    {
+        int s=0;
+        scanf("%d", &x);
+        if(x<4)
+            printf("%d eh primo\n", x);
+        else
+        {
+            for(int i=2; i<x; i++)
+            if(x%i==0)
+            {
+                s = 1;
+                break;
+            }
+            else
+                s = 2;
+        }
+        if(s==1)
+            printf("%d nao eh primo\n", x);
+        else if(s==2)
+            printf("%d eh primo\n", x);
+    }
+    
+    return 0;
+}
