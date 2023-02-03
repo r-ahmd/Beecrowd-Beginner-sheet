@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int n, count=0, sum=0;
+    do
+    {
+        scanf("%d", &n);
+        if(n<0)
+            break;
+        sum+=n;
+        count++;
+    }while(1);
+    printf("%.2f\n", (float)sum/count);
+ 
+    return 0;
+}
