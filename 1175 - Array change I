@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main() 
+{
+    int arr[20];
+    for(int i=0; i<20; i++)
+        scanf("%d", &arr[i]);
+    for(int i=0, a=19; i<20, a>=0; i++, a--)
+        printf("N[%d] = %d\n", i, arr[a]);
+ 
+    return 0;
+}
